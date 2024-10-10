@@ -1,25 +1,13 @@
-import os
-import sys
-
-# Ottieni la cartella corrente (dove si trova lo script app.py)
-current_directory = os.path.dirname(os.path.abspath(__file__))
-
-# Aggiungi il percorso relativo \tkinter\pomodoro_timer\frames
-new_directory = os.path.join(current_directory)
-
-# Aggiungi la nuova directory al percorso di ricerca dei moduli
-sys.path.append(new_directory)
-
+# Tentativo di importare il modulo Timer
 try:
-    from timer import Timer
+    from frames.timer import MyTimer
     print("Modulo Timer importato con successo")
 except ImportError as e:
     print(f"Errore Modulo Timer: {e}")
 
+# Tentativo di importare il modulo Settings
 try:
-    from settings import Settings
+    from frames.settings import Settings
     print("Modulo Settings importato con successo")
 except ImportError as e:
     print(f"Errore Modulo Settings: {e}")
-
-
