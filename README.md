@@ -17,7 +17,7 @@ For create a .exe file
 pip install pyinstaller
 ```
 ```
-pyinstaller .\app.py --add-data="assets;assets" --add-data="frames;frames" --onefile --windowed --name pomodoro-timer --icon=assets/icon.ico   
+pyinstaller .\app.py --clean --add-data="assets;assets" --add-data="frames;frames" --onefile --windowed --name pomodoro-timer --icon=assets/icon.ico   
 ```
 
 See the .exe file in folder into dist/pomodoro-timer.exe
