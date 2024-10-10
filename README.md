@@ -7,12 +7,16 @@ The Pomodoro Timer is a tool used to apply the Pomodoro Technique, which divides
 For execute code install all pip dependences:
 ```
 pip install pygame
+```
+```
 pip install pillow
 ```
 
 For create a .exe file
 ```
 pip install pyinstaller
+```
+```
 pyinstaller .\app.py --add-data="assets;assets" --add-data="frames;frames" --onefile --windowed --name pomodoro-timer --icon=assets/icon.ico   
 ```
 
